@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import { Login } from './pages/Login';
+import { Registration } from './pages/Registration';
+import { RecoverPassword } from './pages/RecoverPassword';
+import { EmailConfirmation } from './pages/EmailConfirmation';
+import { Home } from './pages/Home';
+import { Charge } from './pages/Charge';
+import { CreateCharges } from './pages/CreateCharges';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <BrowserRouter>
+  <Switch>
+    <Route path="/" exact component={Login}/>
+    <Route path="/home" component={Home}/>
+    <Route path="/charge" component={Charge}/>
+    <Route path="/createcharges" component={CreateCharges}/>
+    <Route path="/registration" component={Registration}/>
+    <Route path="/recoverPassword" component={RecoverPassword}/>
+    <Route path="/emailConfirmation" component={EmailConfirmation}/>
+  </Switch>
+  </BrowserRouter>
   );
 }
 

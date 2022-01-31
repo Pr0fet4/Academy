@@ -1,0 +1,79 @@
+.sidebar {
+  max-width: 264px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #263238;
+
+  .logo-academy,
+  .menu-options div {
+    padding-left: 48px;
+  }
+  .logo-academy {
+    margin: 32px 0;
+  }
+
+  .menu-options {
+    width: 100%;    
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .menu-options div {
+    padding: 16px 48px;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    
+
+    cursor: pointer;
+
+    img {
+      margin: 0;
+      margin-right: 20px;
+    }
+
+    &:hover{
+      background: #374952;
+    }
+  }
+  
+  .current {
+    background: #374952;
+  }
+
+  .charge-button {
+    margin: 339px 19px 0px;
+    margin-top: 339px;
+    padding: 11px 60px;
+
+    color: #f7f7f7;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    border: 0;
+
+    background: #da0175;
+    border-radius: 20px;
+
+    cursor: pointer;
+  }
+
+  .charge-button:hover {
+    background-color: rgba(218, 1, 117, 0.35);
+  }
+}

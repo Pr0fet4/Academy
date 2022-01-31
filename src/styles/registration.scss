@@ -1,0 +1,126 @@
+#registration-page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .resgistration-box {
+    width: 405px;
+    height: 586px;
+    padding: 50px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    text-align: center;
+
+    label {
+      margin: 50px 50px 20px 50px;
+      font-weight: 600;
+      font-size: 16px;
+      font-style: bold;
+      line-height: 15px;
+
+      display: flex;
+
+      color: #374952;
+    }
+
+    input {
+      width: 261px;
+      font-size: 14px;
+      border: 0;
+      border-bottom: 1px solid #4c4c4c;
+
+      padding: 10px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    #email {
+      padding: 10px;
+    }
+
+    #password {
+      height: 20px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      color: #374952;
+    }
+
+    .forget-password {
+      margin-top: 15px;
+      margin-left: 150px;
+
+      display: flex;
+
+      color: #374952;
+      font-size: 12px;
+    }
+  }
+
+  #email::-webkit-input-placeholder {
+    font-size: 14px;
+
+    transform: translateY(-10px);
+  }
+  #password::-webkit-input-placeholder {
+    transform: translateY(-10px);
+  }
+
+  .password-button {
+    position: absolute;
+    width: 22.38px;
+    height: 18.01px;
+    left: 1030px;
+    top: 550px;
+
+    background: transparent;
+    border: 0;
+  }
+
+  p {
+    margin-top: 30px;
+
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #263238;
+
+    a {
+      color: #da0175;
+    }
+  }
+
+  .registration-button {
+    width: 200px;
+    height: 39px;
+
+    margin: auto;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f7f7f7;
+    font-style: bold;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #da0175;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .registration-button:hover {
+    background-color: rgba(218, 1, 117, 0.35);
+  }
+}
